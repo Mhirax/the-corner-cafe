@@ -25,7 +25,7 @@ body {
   line-height: 1.6;
 }
 
-/* ---------- NAVBAR (element + class selectors) ---------- */
+/* ---------- NAVBAR — already styled for you, study it ---------- */
 .navbar {
   background-color: #22170f;   /* BACKGROUNDS */
   color: #fff9ec;
@@ -62,11 +62,17 @@ body {
   color: #f4c542;
 }
 
-/* ---------- HERO (id selector via #hero-style class) ---------- */
+/* =====================================================
+   YOUR TURN STARTS HERE
+   The Hero, About, and Menu rules below are missing their
+   property: value; lines. Follow each YOUR TURN comment.
+   ===================================================== */
+
+/* ---------- HERO ---------- */
 .hero {
-  background-color: #f4c542;   /* BACKGROUNDS */
-  padding: 60px 40px;           /* MARGIN / PADDING */
-  text-align: center;           /* centers the text/image boxes as a group */
+  /* YOUR TURN — BACKGROUND: give it a background-color, e.g. #f4c542 */
+  /* YOUR TURN — PADDING: add breathing room, e.g. padding: 60px 40px; */
+  /* YOUR TURN — TEXT-ALIGN: try text-align: center; */
 }
 
 .hero-text,
@@ -82,19 +88,15 @@ body {
 }
 
 .hero h1 {
-  font-family: 'Archivo Black', sans-serif;  /* FONTS / TYPOGRAPHY - bold display font */
-  font-size: 3.5rem;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  line-height: 1.05;
-  margin-bottom: 20px;
+  /* YOUR TURN — FONT: try font-family: 'Archivo Black', sans-serif; */
+  /* YOUR TURN — FONT SIZE: try font-size: 3.5rem; */
+  /* YOUR TURN — SPACING: try margin-bottom: 20px; */
 }
 
 .hero p {
-  font-family: 'Poppins', sans-serif;        /* FONTS / TYPOGRAPHY - lighter contrast font */
-  font-size: 1.2rem;
-  letter-spacing: 0.3px;
-  margin-bottom: 25px;
+  /* YOUR TURN — FONT: try font-family: 'Poppins', sans-serif; */
+  /* YOUR TURN — FONT SIZE: try font-size: 1.2rem; */
+  /* YOUR TURN — SPACING: try margin-bottom: 25px; */
 }
 
 .hero-image img {
@@ -105,18 +107,15 @@ body {
 
 .btn {
   display: inline-block;
-  background-color: #2b1d12;    /* COLORS / BACKGROUNDS */
-  color: #fff9ec;
-  padding: 14px 30px;            /* MARGIN / PADDING */
-  border: 2px solid #2b1d12;     /* BORDERS */
-  border-radius: 30px;           /* BORDERS (rounded corners) */
+  /* YOUR TURN — COLORS: give it a background-color and a text color */
+  /* YOUR TURN — PADDING: try padding: 14px 30px; */
+  /* YOUR TURN — BORDER: try border-radius: 30px; to round the corners */
   text-decoration: none;
   font-weight: bold;
 }
 
 .btn:hover {
-  background-color: transparent;
-  color: #2b1d12;
+  /* YOUR TURN — HOVER: make the button change color when the mouse is over it */
 }
 
 /* ---------- CONTENT SECTIONS ---------- */
@@ -125,48 +124,48 @@ body {
   text-align: center;
 }
 
-/* ---------- ABOUT (id selector - bigger and wider than the other sections) ---------- */
+/* ---------- ABOUT ---------- */
 #about {
-  background-color: #f2e4d0;     /* BACKGROUNDS - warm tan, distinct from the menu section */
-  padding: 100px 60px;           /* MARGIN / PADDING - taller section */
+  /* YOUR TURN — BACKGROUND: pick a background-color for this section */
+  /* YOUR TURN — PADDING: try padding: 100px 60px; */
 }
 
 #about h2 {
-  font-size: 2.5rem;             /* FONTS / TYPOGRAPHY - bigger heading */
+  /* YOUR TURN — FONT SIZE: try font-size: 2.5rem; */
 }
 
 #about p {
-  max-width: 900px;              /* HEIGHT / WIDTH - wider block of text */
   margin: 0 auto;
-  font-size: 1.3rem;             /* FONTS / TYPOGRAPHY - bigger paragraph */
+  /* YOUR TURN — FONT SIZE: try font-size: 1.3rem; */
+  /* YOUR TURN — WIDTH: try max-width: 900px; to keep lines from getting too long */
 }
 
 .alt-background {
   background-color: #fff9ec;    /* BACKGROUNDS */
 }
 
-/* ---------- MENU (id selector - bigger and wider, to match About) ---------- */
+/* ---------- MENU ---------- */
 #menu {
-  background-color: #f0d9b5;      /* BACKGROUNDS - warm caramel, distinct from About's tan */
-  padding: 100px 60px;            /* MARGIN / PADDING - taller section */
+  /* YOUR TURN — BACKGROUND: pick a different background-color than About */
+  /* YOUR TURN — PADDING: try padding: 100px 60px; */
 }
 
 #menu h2 {
-  font-size: 2.5rem;              /* FONTS / TYPOGRAPHY - bigger heading */
+  /* YOUR TURN — FONT SIZE: try font-size: 2.5rem; */
 }
 
 .menu-list {
-  list-style: decimal;            /* keeps the 1, 2, 3... numbering */
   text-align: left;
-  padding-left: 40px;
-  max-width: 700px;               /* HEIGHT / WIDTH - wider list */
   margin: 0 auto;
+  /* YOUR TURN — LIST STYLE: try list-style: decimal; */
+  /* YOUR TURN — SPACING: try padding-left: 40px; */
+  /* YOUR TURN — WIDTH: try max-width: 700px; */
 }
 
 .menu-list li {
-  padding: 18px 0;
-  border-bottom: 1px solid #ddd;  /* BORDERS */
-  font-size: 1.4rem;              /* FONTS / TYPOGRAPHY - bigger drink names */
+  /* YOUR TURN — SPACING: try padding: 18px 0; */
+  /* YOUR TURN — BORDER: try border-bottom: 1px solid #ddd; */
+  /* YOUR TURN — FONT SIZE: try font-size: 1.4rem; */
 }
 
 .menu-list input[type="checkbox"] {
@@ -175,7 +174,9 @@ body {
   vertical-align: middle;
 }
 
-/* ---------- FOOTER (id selector) ---------- */
+/* =====================================================
+   FOOTER — already styled for you, study it
+   ===================================================== */
 #contact {
   background-color: #2b1d12;     /* BACKGROUNDS */
   color: #fff9ec;
