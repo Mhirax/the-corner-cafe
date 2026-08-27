@@ -1,0 +1,266 @@
+/* =====================================================
+   HOW TO LINK
+   This file is connected in index.html <head> with:
+   <link rel="stylesheet" href="styles.css">
+   ===================================================== */
+
+/* =====================================================
+   SYNTAX
+   selector {
+     property: value;
+   }
+   ===================================================== */
+
+/* =====================================================
+   SELECTORS
+   - element selector -> body, h1, p
+   - class selector    -> .hero, .btn   (the dot)
+   - id selector       -> #about, #contact  (the hash)
+   ===================================================== */
+
+body {
+  margin: 0;
+  font-family: 'Trebuchet MS', Arial, sans-serif; /* FONTS / TYPOGRAPHY */
+  color: #2b1d12;                                  /* COLORS */
+  line-height: 1.6;
+}
+
+/* ---------- NAVBAR (element + class selectors) ---------- */
+.navbar {
+  background-color: #22170f;   /* BACKGROUNDS */
+  color: #fff9ec;
+  padding: 20px 40px;           /* MARGIN / PADDING */
+  overflow: hidden;             /* keeps the floated items below inside the navbar */
+}
+
+.logo {
+  float: left;                  /* pushes the logo to the left end */
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  float: right;                 /* pushes the nav links to the right end */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+.nav-links a {
+  color: #fff9ec;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #f4c542;
+}
+
+/* ---------- HERO (id selector via #hero-style class) ---------- */
+.hero {
+  background-color: #f4c542;   /* BACKGROUNDS */
+  padding: 60px 40px;           /* MARGIN / PADDING */
+  text-align: center;           /* centers the text/image boxes as a group */
+}
+
+.hero-text,
+.hero-image {
+  display: inline-block;
+  vertical-align: middle;
+  width: 45%;                  /* HEIGHT / WIDTH */
+}
+
+.hero-text {
+  text-align: left;
+  padding-right: 30px;
+}
+
+.hero h1 {
+  font-family: 'Archivo Black', sans-serif;  /* FONTS / TYPOGRAPHY - bold display font */
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  line-height: 1.05;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-family: 'Poppins', sans-serif;        /* FONTS / TYPOGRAPHY - lighter contrast font */
+  font-size: 1.2rem;
+  letter-spacing: 0.3px;
+  margin-bottom: 25px;
+}
+
+.hero-image img {
+  width: 100%;                  /* HEIGHT / WIDTH */
+  height: auto;
+  max-width: 380px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #2b1d12;    /* COLORS / BACKGROUNDS */
+  color: #fff9ec;
+  padding: 14px 30px;            /* MARGIN / PADDING */
+  border: 2px solid #2b1d12;     /* BORDERS */
+  border-radius: 30px;           /* BORDERS (rounded corners) */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: #2b1d12;
+}
+
+/* ---------- CONTENT SECTIONS ---------- */
+.content-section {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+/* ---------- ABOUT (id selector - bigger and wider than the other sections) ---------- */
+#about {
+  background-color: #f2e4d0;     /* BACKGROUNDS - warm tan, distinct from the menu section */
+  padding: 100px 60px;           /* MARGIN / PADDING - taller section */
+}
+
+#about h2 {
+  font-size: 2.5rem;             /* FONTS / TYPOGRAPHY - bigger heading */
+}
+
+#about p {
+  max-width: 900px;              /* HEIGHT / WIDTH - wider block of text */
+  margin: 0 auto;
+  font-size: 1.3rem;             /* FONTS / TYPOGRAPHY - bigger paragraph */
+}
+
+.alt-background {
+  background-color: #fff9ec;    /* BACKGROUNDS */
+}
+
+/* ---------- MENU (id selector - bigger and wider, to match About) ---------- */
+#menu {
+  background-color: #f0d9b5;      /* BACKGROUNDS - warm caramel, distinct from About's tan */
+  padding: 100px 60px;            /* MARGIN / PADDING - taller section */
+}
+
+#menu h2 {
+  font-size: 2.5rem;              /* FONTS / TYPOGRAPHY - bigger heading */
+}
+
+.menu-list {
+  list-style: decimal;            /* keeps the 1, 2, 3... numbering */
+  text-align: left;
+  padding-left: 40px;
+  max-width: 700px;               /* HEIGHT / WIDTH - wider list */
+  margin: 0 auto;
+}
+
+.menu-list li {
+  padding: 18px 0;
+  border-bottom: 1px solid #ddd;  /* BORDERS */
+  font-size: 1.4rem;              /* FONTS / TYPOGRAPHY - bigger drink names */
+}
+
+.menu-list input[type="checkbox"] {
+  margin-right: 12px;
+  transform: scale(1.3);
+  vertical-align: middle;
+}
+
+/* ---------- FOOTER (id selector) ---------- */
+#contact {
+  background-color: #2b1d12;     /* BACKGROUNDS */
+  color: #fff9ec;
+  padding: 50px 40px;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 400px;
+  margin: 30px auto;
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.contact-form input {
+  width: 100%;                   /* HEIGHT / WIDTH */
+  box-sizing: border-box;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;        /* BORDERS */
+  border-radius: 6px;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #f4c542;
+  color: #2b1d12;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.social-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.social-list li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-list a {
+  color: #fff9ec;
+  text-decoration: none;
+}
+
+.copyright {
+  font-size: 0.85rem;
+  margin-top: 20px;
+  opacity: 0.8;
+}
+
+/* =====================================================
+   RESPONSIVENESS (media query)
+   Below 700px screen width, stack the hero text/image
+   and the nav links instead of sitting side by side.
+   ===================================================== */
+@media (max-width: 700px) {
+  .hero-text,
+  .hero-image {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .logo,
+  .nav-links {
+    float: none;
+  }
+
+  .nav-links li {
+    display: block;
+    margin: 8px 0;
+  }
+}

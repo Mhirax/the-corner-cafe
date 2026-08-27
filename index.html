@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Corner Café</title>
+
+  <!-- FAVICON: the small icon shown in the browser tab -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+  <!-- Google Fonts for the hero headline/tagline -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- HOW TO LINK CSS: this line connects styles.css to this page -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- SEMANTIC ELEMENT: <header> marks the top banner of the page -->
+  <header class="navbar">
+    <div class="logo">CORNER CAFÉ</div>
+
+    <!-- SEMANTIC ELEMENT: <nav> marks a block of navigation links -->
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- SEMANTIC ELEMENT: <main> marks the primary content of the page -->
+  <main>
+
+    <!-- SEMANTIC ELEMENT: <section> groups related content -->
+    <section class="hero">
+
+      <!-- DIV: a plain box used only to group the text together -->
+      <div class="hero-text">
+        <h1>Fresh Roasted<br>Every Morning</h1>
+        <p>Handcrafted coffee, warm pastries, and a corner table waiting for you.</p>
+
+        <!-- LINK styled to look like a BUTTON -->
+        <a href="#menu" class="btn">See The Menu</a>
+      </div>
+
+      <!-- DIV: a plain box used only to group the image -->
+      <div class="hero-image">
+        <img src="images/hero-coffee.svg"
+             alt="Illustration of a steaming cup of coffee with a croissant on a saucer"
+             width="380" height="380">
+      </div>
+    </section>
+
+    <section id="about" class="content-section">
+      <h2>About The Corner Café</h2>
+      <p>Tucked into a quiet street corner, The Corner Café has served hand-brewed
+        coffee and fresh pastries since 2015. We roast in small batches and bake
+        every single morning.</p>
+    </section>
+
+    <section id="menu" class="content-section alt-background">
+      <h2>Today's Favourite Drinks</h2>
+
+      <!-- LIST: ordered list of menu items, with a checkbox mark beside each -->
+      <ol class="menu-list">
+        <li><input type="checkbox" checked disabled> Espresso — ₦1,500</li>
+        <li><input type="checkbox" checked disabled> Cappuccino — ₦2,000</li>
+        <li><input type="checkbox" checked disabled> Iced Latte — ₦2,200</li>
+        <li><input type="checkbox" checked disabled> Green Tea — ₦1,200</li>
+        <li><input type="checkbox" checked disabled> Hot Chocolate — ₦1,800</li>
+        <li><input type="checkbox" checked disabled> Fresh Lemonade — ₦1,000</li>
+      </ol>
+    </section>
+
+  </main>
+
+  <!-- SEMANTIC ELEMENT: <footer> marks the bottom of the page -->
+  <footer id="contact">
+    <h2>Visit Or Say Hello</h2>
+    <p>12 Palm Street, Lagos · Open 7am – 8pm daily</p>
+
+    <!-- FORM & INPUT TYPES -->
+    <form class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com">
+
+      <!-- BUTTON element -->
+      <button type="submit">Send Message</button>
+    </form>
+
+    <ul class="social-list">
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">WhatsApp</a></li>
+    </ul>
+
+    <p class="copyright">&copy; 2026 The Corner Café. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
